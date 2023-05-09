@@ -1,0 +1,130 @@
+.deltail-nav {
+    background-color: sandybrown;
+    position: relative;
+    top: 85px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.detail-nav {
+    max-width: 800px;
+}
+
+.content-detail-nav {
+    display: block;
+}
+
+.detail-nav-nav {
+    flex-wrap: nowrap;
+    display: flex;
+    padding: 50px;
+}
+
+.deltail-nav-div {
+    background: #f3edd7;
+    border-bottom: 1px solid #e4e0cc;
+    border-top: 1px solid #eae7d6;
+    margin: 0 20px;
+    padding: 3px 15px;
+}
+
+.deltail-div-div {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.bookcase {
+    position: relative;
+    display: flex;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.bookcase-nav {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.book-nav {
+    width: 180px;
+    margin: 20px;
+}
+
+.book-nav-nav {
+    position: relative;
+}
+
+.content-nav-nav {
+    height: 75px;
+}
+
+.book-nav:hover .overlay{
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    opacity: .8;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-cr {
+    background-color: peru;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+a.btn {
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px;
+    white-space: nowrap;
+    background-color: #666;
+    line-height: 1.5em;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+
+a.btn:hover {
+    opacity: 0.8;
+}
