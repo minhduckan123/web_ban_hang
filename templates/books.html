@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="/static/detail.css"/>
+<body>
+    <nav class="deltail-nav">
+        <div>
+            <h2><a>{{ bookname }}</a></h2>
+            <div class="deltail-nav-div">
+                <div class="deltail-div-div">
+                    <div class="bookcase bookcase-nav">
+                        {% for book in books %}
+                            <div class="book-nav">
+                                <a href="/detail/{{ book[0] }}">
+                                    <div class="book-nav-nav">
+                                        <img width="180px" height="300px" src="{{ book[1] }}">
+                                        <div class="overlay">
+                                            <div class="text">${{ book[4] }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="/detail/{{ book[0] }}" class="btn">Add to Caft</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2><a>Trending Books</a></h2>
+            <div class="deltail-nav-div">
+                <div class="deltail-div-div">
+                    <div class="bookcase bookcase-nav">
+                        {% for book in books_added %}
+                            <div class="book-nav">
+                                <a href="/detail/{{ book[0] }}">
+                                    <div class="book-nav-nav">
+                                        <img width="180px" height="300px" src="{{ book[1] }}">
+                                        <div class="overlay">
+                                            <div class="text">${{ book[4] }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="/detail/{{ book[0] }}" class="btn">Add to Caft</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2><a>Best Selling</a></h2>
+            <div class="deltail-nav-div">
+                <div class="deltail-div-div">
+                    <div class="bookcase bookcase-nav">
+                        {% for book in books_sold %}
+                            <div class="book-nav">
+                                <a href="/detail/{{ book[0] }}">
+                                    <div class="book-nav-nav">
+                                        <img width="180px" height="300px" src="{{ book[1] }}">
+                                        <div class="overlay">
+                                            <div class="text">${{ book[4] }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="/detail/{{ book[0] }}" class="btn">Add to Caft</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2><a>Collections</a></h2>
+            <div class="deltail-nav-div">
+                <div class="deltail-div-div">
+                    <div class="bookcase bookcase-nav">
+                        {% for book in books_economic %}
+                            <div class="book-nav">
+                                <a href="/detail/{{ book[0] }}">
+                                    <div class="book-nav-nav">
+                                        <img width="180px" height="300px" src="{{ book[1] }}">
+                                        <div class="overlay">
+                                            <div class="text">${{ book[4] }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="/detail/{{ book[0] }}" class="btn">Add to Caft</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>

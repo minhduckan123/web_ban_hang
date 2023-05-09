@@ -1,0 +1,27 @@
+<title>{{ book[2] }} | Marketing, Sales, Agency, and Customer Success Content </title>
+{% include 'banner2.html' %}
+<link rel="stylesheet" href="/static/detail.css"/>
+<script src="/static/detail.js/"></script>
+<body>
+    <nav style="top: 106px" class="deltail-nav">
+        <div class="detail-nav-nav">
+            <div class="detail-nav">
+                    <img src="{{ book[1] }}">
+                    <h1>{{ book[2] }}</h1>
+                    <p><strong>Author:</strong> {{ book[3] }}</p>
+                    <p><strong>Price:</strong> ${{ book[4] }}</p>
+                    <p><strong>Previews:</strong> {{ book[5] }}</p>
+                    <p><strong>Quantity:</strong> {{ book[8] }}</p>
+                    <p><strong>Sold:</strong> {{ book[6] }}</p>
+                <p><a href="/">Back to List</a></p>
+            </div>
+            <div id="book-info" class="content-detail-nav">
+                <p>Price: $<span id="book-price" data-book-id="{{ book[0] }}">{{ book[4] }}</span></p>
+                <p>Số lượng: <input class="btn-cr" type="number" id="book-quantity" min="1" value="1" max="{{ book[8] }}"></p>
+                <p>Tổng tiền: <span id="book-total"></span></p>
+                <button id="add-to-cart-btn" class="btn-cr">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </nav>
+</body>
+{% include 'footer.html' %}

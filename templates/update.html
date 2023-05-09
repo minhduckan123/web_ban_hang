@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Book</title>
+</head>
+<body>
+    <h1>Update Book</h1>
+    <a href="/">Home</a>
+    <form action="/update/{{ book[0] }}" method="post">
+        <label>Title:</label>
+        <input type="text" name="title" value="{{ book[2] }}" required><br>
+        <label>Author:</label>
+        <input type="text" name="author" value="{{ book[3] }}" required><br>
+        <label>Price:</label>
+        <input type="number" name="price" value="{{ book[4] }}" step="0.01" required><br>
+        <input type="submit" value="Update Book">
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<title>User Account</title>
+{% include 'banner2.html' %}
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/banner.css">
+<link rel="stylesheet" href="/static/detail.css">
+<body>
+    <header class="deltail-nav" style="top : 106px;">
+      <nav class="banner-nav-nav content-banner-nav-nav content-nav-nav">
+        <ul>
+          <li><a href="/manage_wallet">Quản lý ví</a></li>
+          <li><a href="/change_info">Đổi thông tin</a></li>
+          <li><a href="/my_cart">Giỏ hàng sách đã chọn</a></li>
+          <li><a href="/cart_paid">Giỏ hàng sách đã mua</a></li>
+          <li><a href="/signout">Đăng xuất</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="deltail-nav">
+      <h1>Xin chào, {{ user[1] }}</h1>
+      <p>Bạn có {{ user[4] }} dollars trong tài khoản.</p>
+    </main>
+</body>
+{% include 'footer.html' %}
