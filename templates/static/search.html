@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Books</title>
+</head>
+<body>
+    <h1>Search Books</h1>
+    <a href="/">Home</a>
+    <form action="/search" method="post">
+        <input type="text" name="keyword" placeholder="Search by title or author">
+        <input type="submit" value="Search">
+    </form>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book[2] }}</td>
+            <td>{{ book[3] }}</td>
+            <td>{{ book[4] }}</td>
+            <td>
+                <a href="/detail/{{ book[0] }}">Detail</a>
+                <a href="/update/{{ book[0] }}">Update</a>
+                <form action="/delete/{{ book[0] }}" method="post" style="display:inline;">
+                    <input type="submit" value="Delete">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
